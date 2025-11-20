@@ -199,7 +199,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      a7b0581c31113e7db5de613f1552dd3e-no-bg-preview (carve.photos)_0: -5993611082267175228
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
