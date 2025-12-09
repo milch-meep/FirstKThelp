@@ -1,19 +1,18 @@
-using JetBrains.Annotations;
-using System.Security.Cryptography;
+
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
+
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CLOCKTIMER : MonoBehaviour
 {
     public TMP_Text timerTwxt;
-    public TMP_Text timerTwy;
+    public TMP_Text resourse;
     public bool start;
+    public Image Banana;
     public float time;
     private int roundcounter = 0;
-
+    float resourse_count = 0;
     public float sufferDuration;
     public Image clock;
 
@@ -41,8 +40,24 @@ public class CLOCKTIMER : MonoBehaviour
             start = false;
         }
     }
+    public void banana()
+    {
+
+        //Banana.fillAmount += Time.deltaTime;
+        if (Banana.fillAmount >= 1)
+        {
+            resourse_count += 1;
+            resourse.text = Mathf.Round(resourse_count).ToString();
+            Banana.fillAmount = 0;
+        }
+
+
+    }
     private void Update()
     {
+        Banana.fillAmount += Time.deltaTime;
+        banana();
+
         if (start == true)
         {
             time -= Time.deltaTime;
@@ -52,13 +67,14 @@ public class CLOCKTIMER : MonoBehaviour
         if (clock.fillAmount == 0)
         {
             roundcounter += 1;
-            timerTwy.text = roundcounter.ToString();
+            timerTwxt.text = roundcounter.ToString();
         }
         if (time <= 0)
         {
             start = false;
             clock.fillAmount = 1;
         }
+
     }
 }
 
