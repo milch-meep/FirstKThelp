@@ -224,7 +224,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      628288c91acc0a8c5779c38057b4cb08-no-bg-preview (carve.photos) (1)_0: 6826113844673428679
+      628288c91acc0a8c5779c38057b4cb08-no-bg-preview (carve.photos) (1)_1: -5100887649685771891
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

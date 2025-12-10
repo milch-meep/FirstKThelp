@@ -1,27 +1,35 @@
 
+using System.Runtime.CompilerServices;
 using TMPro;
 
 using UnityEngine;
+using UnityEngine.InputSystem.iOS;
 using UnityEngine.UI;
 
 public class CLOCKTIMER : MonoBehaviour
 {
-    public TMP_Text timerTwxt;
-    public TMP_Text resourse;
     public bool start;
-    public Image Banana;
+
     public float time;
-    private int roundcounter = 0;
-    float resourse_count = 0;
-    public float sufferDuration;
+    public TMP_Text timerTwxt;
     public Image clock;
+    public float sufferDuration;
+
+    public Image Banana;
+    float resourse_count = 0;
+    public TMP_Text resourse;
+
+    private int roundcounter = 0;
+    public TMP_Text round_cntr;
+
+    [SerializeField] Button click; 
 
     public void Start_Click()
     {
         if (start) return;
         time = sufferDuration;
         start = true;
-
+        resourse_count -= 5;
     }
 
     private void Start()
@@ -53,8 +61,20 @@ public class CLOCKTIMER : MonoBehaviour
 
 
     }
+    public void button_activity()
+    {
+        if (resourse_count < 5)
+        {
+            click.gameObject.SetActive(false);
+        }
+        else
+        {
+            click.gameObject.SetActive(true);
+        }
+    }
     private void Update()
     {
+        button_activity();
         Banana.fillAmount += Time.deltaTime;
         banana();
 
@@ -67,15 +87,19 @@ public class CLOCKTIMER : MonoBehaviour
         if (clock.fillAmount == 0)
         {
             roundcounter += 1;
-            timerTwxt.text = roundcounter.ToString();
+            //timerTwxt.text = roundcounter.ToString();
+            round_cntr.text = Mathf.Round(roundcounter).ToString();
         }
         if (time <= 0)
         {
             start = false;
             clock.fillAmount = 1;
         }
-
     }
 }
+
+
+
+
 
 

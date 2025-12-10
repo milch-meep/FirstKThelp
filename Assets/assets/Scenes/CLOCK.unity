@@ -340,7 +340,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.61700004, y: 0}
   m_AnchorMax: {x: 0.951822, y: 0.55700004}
-  m_AnchoredPosition: {x: -1.5, y: -1.1060028}
+  m_AnchoredPosition: {x: -1.5, y: -1.1060181}
   m_SizeDelta: {x: 8.428398, y: -2.2071}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &243928269
@@ -551,8 +551,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 44.763, y: -125}
-  m_SizeDelta: {x: 35.9463, y: 50}
+  m_AnchoredPosition: {x: 0, y: -46}
+  m_SizeDelta: {x: 100.97, y: 56.5988}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &525547279
 CanvasRenderer:
@@ -649,7 +649,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 3.9592438, z: 2.6394653, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1037,7 +1037,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.7582723, y: 0.58421266}
   m_AnchorMax: {x: 0.84118325, y: 0.772}
-  m_AnchoredPosition: {x: 0.5, y: 1.6490021}
+  m_AnchoredPosition: {x: 6.6997, y: -0.62851}
   m_SizeDelta: {x: 13.3995, y: -1.257}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1574107358
@@ -1173,8 +1173,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4574555, y: 0.26200002}
   m_AnchorMax: {x: 0.65900004, y: 0.68847513}
-  m_AnchoredPosition: {x: -1.0043983, y: -2.1280975}
-  m_SizeDelta: {x: 2.0087, y: 4.2563}
+  m_AnchoredPosition: {x: -95, y: 105.11}
+  m_SizeDelta: {x: 2.0087, y: 29.3315}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1606621425
 CanvasRenderer:
@@ -1376,13 +1376,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cccdc2eab4950e64f85a83b4297fec1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerTwxt: {fileID: 1531389884}
-  resourse: {fileID: 525547280}
   start: 0
-  Banana: {fileID: 1606621426}
   time: 0
-  sufferDuration: 5
+  timerTwxt: {fileID: 1531389884}
   clock: {fileID: 243928269}
+  sufferDuration: 5
+  Banana: {fileID: 1606621426}
+  resourse: {fileID: 525547280}
+  round_cntr: {fileID: 1574107359}
+  click: {fileID: 1800014748}
 --- !u!4 &2074704684
 Transform:
   m_ObjectHideFlags: 0
